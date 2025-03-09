@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/editTextNum1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Angka 1"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextNum2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Angka 2"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radioTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah (+)" />
+
+        <RadioButton
+            android:id="@+id/radioKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurang (-)" />
+
+        <RadioButton
+            android:id="@+id/radioKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kali (*)" />
+
+        <RadioButton
+            android:id="@+id/radioBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagi (/)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="12dp"
+        android:text="Hitung"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
